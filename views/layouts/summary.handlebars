@@ -1,0 +1,299 @@
+<!--
+<h2 class="page-header" id="name-text">Summary</h2>
+-->
+<div class="col-lg12 mx-auto" id="summary">
+
+<div id="DemoCard" class="card">
+	<div id=”container” class="movable">
+		<div class="card-body" style="float:left; width: 30%">
+			<div class="row">
+				<h2 id="Patient_Name" class="card-title col-sm-nfv">Loading Patient</h2>
+			</div>
+		</div>
+		<div class="card-body" style="float:right; width: 70%">
+			<table id="demoNew" class="vtTable">
+				<tbody>
+					<tr>
+						<th id="dob_text" class="demoTableValue">N/A</th>
+						<th id="age_text" class="demoTableValue">N/A</th>
+						<th id="gender_text" class="demoTableValue">N/A</th>
+						<th id="race_text" class="demoTableValue">N/A</th>
+						<th id="married_text" class="demoTableValue">N/A</th>
+						<th id="insurance_text" class="demoTableValue">N/A</th>
+					</tr>
+					<tr>
+						<th id="dob-name" class="demoTableLabel">DOB</th>
+						<th id="age-name" class="demoTableLabel">Age</th>
+						<th id="gender-name" class="demoTableLabel">Gender</th>
+						<th id="race-name" class="demoTableLabel">Race</th>
+						<th id="married-name" class="demoTableLabel">Marital Status</th>
+						<th id="insurance-name" class="demoTableLabel">Insurance</th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div id="VitalCard" class="card">
+	<div id=”container” class="movable">
+		<div class="card-body" style="float:left; width: 25%">
+			<div class="row">
+				<h2 id="vitalTitle" class="card-title col-sm-nfv">Vitals/Labs</h2>
+			</div>
+		</div>
+		<div class="card-body" style="float:right; width: 75%">
+			<table id="vitalsNew" class="vtTable">
+				<tbody>
+					<tr>
+						<th id="height-text" class="vtTableValue" style="cursor: pointer;">N/A</th>
+						<th id="weight-text" class="vtTableValue" style="cursor: pointer;">N/A</th>
+						<th id="bmi-score" class="vtTableValue" style="cursor: pointer;">N/A</th>
+						<th id="gluc-score" class="vtTableValue" style="cursor: pointer;">N/A</th>
+						<th id="hba1c-score" class="vtTableValue" style="cursor: pointer;">N/A</th>
+						<th id="bp-overall" class="vtTableValue" style="cursor: pointer;">N/A</th>
+						<th id="chol" class="vtTableValue" style="cursor: pointer;">N/A</th>
+						<th id="hdl-score" class="vtTableValue" style="cursor: pointer;">N/A</th>
+						<th id="ldl-score" class="vtTableValue" style="cursor: pointer;">N/A</th>
+					</tr>
+					<tr>
+						<th id="height-name" class="vtTableLabel">Hgt</th>
+						<th id="weight-name" class="vtTableLabel">Weight</th>
+						<th id="BMI-name" class="vtTableLabel">BMI</th>
+						<th id="glucose-name" class="vtTableLabel">Glucose</th>
+						<th id="HbA1c-name" class="vtTableLabel">HbA1c</th>
+						<th id="bp-name" class="vtTableLabel">BP</th>
+						<th id="chol-name" class="vtTableLabel">Tot Chol</th>
+						<th id="hdl-name" class="vtTableLabel">HDL</th>
+						<th id="ldl-name" class="vtTableLabel">LDL</th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div id="DietCard" class="card">
+	<div id=”container” class="movable">
+		<div class="card-body" style="float:left; width: 30%; vertical-align:middle; line-height:45px;">
+			<div class="row">
+				<h2 id="dietTitle" class="card-title col-sm-11">Personal Diet</h2>
+			</div>
+		</div>
+		<div class="card-body" style="float:right; width: 70%">
+			<table id="dietNew" class="vtTable">
+				<tbody>
+					<tr> 
+						<th colspan="3" class="gdTableLabel trBottom">Diet Survey</th>
+						<th></th>
+						<th class="gdTableLabel trBottom">Grocery Purchase</th>
+						<th></th>
+						<th class="gdTableLabel trBottom">Other</th>
+					</tr>
+					<tr>
+						<th id="hei_value" class="gdTableValue" style="cursor: pointer;">N/A</th>
+						<th id="ahei_value" class="gdTableValue" style="cursor: pointer;">N/A</th>
+						<th id="dash_value" class="gdTableValue" style="cursor: pointer;">N/A</th>
+						<th></th>
+						<th id="nutrisavings_value" class="gdTableValue" style="cursor: pointer;">N/A</th>
+						<th></th>
+						<th id="myFitnessPal_value" class="gdTableValue" style="cursor: pointer;">N/A</th>
+					</tr>
+					<tr>
+						<th id="hei-name" class="gdTableLabel">HEI</th>
+						<th id="ahei-name" class="gdTableLabel">AHEI</th>
+						<th id="dash-name" class="gdTableLabel">DASH</th>
+						<th></th>
+						<th id="nuval-name" class="gdTableLabel">NutriSavings</th>
+						<th></th>
+						<th id="myFitnessPal-name" class="gdTableLabel">My Fitness Pal</th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="card groceryCard">
+
+	<div id="GroceryCardMap" class="card-body">
+		<div id=”grocery-container” class="movable">
+			<h2 id="groceryTitle" class="card-title">Food Environment</h2>
+			<table>
+				<tbody>
+				<tr class="groceryTableLabel">
+						<div class="checkbox-inline">
+                     <label id='CS_label'><input type="checkbox" id='CS' name="optradio" checked>Convenience Stores</label>
+                 </div>
+
+                 <div class="checkbox-inline">
+                     <label id='SM_label'><input type="checkbox" id='SM' name="optradio" checked>Supermarkets</label>
+                 </div>
+
+                 <div class="checkbox-inline">
+                     <label id='FM_label'><input type="checkbox" id='FM' name="optradio" checked>Farmers Markets</label>
+                 </div>
+
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="cardBlankBorder GroceryContentsContainer">
+			<div class="leftGrocery" id="map"></div>
+			<div class="rightGrocery">
+				<th>Shopping Outlets:</th>
+				<input id="searchInput" class="controls" type="text" placeholder="Enter a location">
+				<table id="groceryTableData" class="groceryTable">
+					<tbody class = "groceryTableBody">
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+<div class = 'custom-tip' style="display:none">
+    <h4 class="tiptitle" id="medTitle"></h4>
+    <b class="tipcontent" id="source"></b><br>
+    <b class="tipcontent" id="dose"></b><br>
+    <b class="tipcontent" id="status"></b>
+
+</div>
+
+<div class="card" id='medicationTimeline'>
+    <div class="card-body">
+		<div id="medicine-container" class="movable">
+			<h2 class="card-title">Medications</h2>
+			<div class="floating-box">
+				<h4 class="card-title">Source</h4>
+				<label class="radio-inline">
+					<input type="radio" name="filter" id="prac">Practitioner
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="filter" id="pat">Patient
+				</label>
+				<label class="radio-inline">
+					  <input type="radio" name="filter" id="all" checked="checked">All
+				</label>
+			</div>
+			<div class="floating-box">
+				<h4 class="card-title">Status</h4>
+				<div class="checkbox">
+					<label><input type="checkbox" id="statusCheck" value="">Hide inactive</label>
+				</div>
+		  </div>
+		  <div id="tooltips">
+		  </div>
+		</div>
+    </div>
+</div>
+
+<script src="javascripts/summarySOF.js" type="text/javascript"></script>
+<script src="javascripts/nutriSavingsController.js" type="text/javascript"></script>
+<script src="javascripts/staticDDP.js" type="text/javascript"></script>
+<script src="javascripts/radarChart.js" type="text/javascript"></script>
+<script src="javascripts/vitalHandlers.js" type="text/javascript"></script>
+<script src="javascripts/dietEnvironment.js" type="text/javascript"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false&amp;libraries=places,geometry&key=AIzaSyBzfiBP8bqaT6uuPPoBCGNiO5HC0JXkNOk"></script>
+<script src="https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script src="/scripts/math.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.js"></script>
+
+
+<script>
+
+
+  /* Get static data - Eventually Johnny will have an api/specification for this */
+  populateDietaryData();
+
+  /* Get data from EHR */
+  FHIR.oauth2.ready(onReady, onError);
+
+  /* HEI Listeners */
+  document.getElementById("hei_value").addEventListener("click", heiHandler_click, false);
+
+  /* AHEI Listeners */
+  document.getElementById("ahei_value").addEventListener("click", aheiHandler_click, false);
+
+  /* DASH Listeners */
+  document.getElementById("dash_value").addEventListener("click", dashHandler_click, false);
+
+  /* NutriSavings Listeners */
+  document.getElementById("nutrisavings_value").addEventListener("click", nutrisavingsHandler_click, false);
+
+
+  /* Height Listener */
+  document.getElementById("height-text").addEventListener("click", heightHandler, false);
+
+  /* Weight Listener */
+  document.getElementById("weight-text").addEventListener("click", weightHandler, false);
+
+  /* BMI Listener */
+  document.getElementById("bmi-score").addEventListener("click", bmiHandler, false);
+
+  /* Glucose Listener */
+  document.getElementById("gluc-score").addEventListener("click", glucoseHandler, false);
+
+  /* HbA1c Listener */
+  document.getElementById("hba1c-score").addEventListener("click", hba1cHandler, false);
+
+  /* BP Listener */
+  document.getElementById("bp-overall").addEventListener("click", bpHandler, false);
+
+  /* Total Cholesterol Listener */
+  document.getElementById("chol").addEventListener("click", cholHandler, false);
+
+  /* HDL Listener */
+  document.getElementById("hdl-score").addEventListener("click", hdlHandler, false);
+
+  /* LDL Listener */
+  document.getElementById("ldl-score").addEventListener("click", ldlHandler, false);
+
+  /* Toggle Handlers */
+  document.getElementById("CS").addEventListener("click", csHandler, false);
+
+  document.getElementById("SM").addEventListener("click", smHandler, false);
+
+  document.getElementById("FM").addEventListener("click", fmHandler, false);
+
+
+  function waitForElement(){
+    if (pat_addr == 'NA') {
+	return;
+    }
+    else if(typeof pat_addr !== "undefined" && pat_addr !== 'NA'){
+    	console.log("got it!");
+    	console.log(pat_addr);
+    	plotMap(pat_addr, "Groceries");
+        //variable exists, do what you want
+    }
+    else{
+    	//console.log("wait");
+        setTimeout(waitForElement, 250);
+    }
+}
+
+	waitForElement();
+
+  $( function() {
+  
+    $( "#summary" ).sortable({
+	  overflow: "visible",
+	  handle: ".movable",
+	});
+
+    //$( "#summary" ).sortable({
+    //  handle: ".card"
+    //});
+    $( "#summary" ).disableSelection({
+	  overflow: "visible"
+	});
+  } );
+</script>
